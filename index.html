@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AG-VPReID 2025: The 2nd Aerial-Ground Person ReID Challenge" />
+    <meta name="author" content="AG-VPReID 2025 Team" />
+    <title>AG-VPReID 2025</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- New Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">AG-VPReID 2025</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dataset">Dataset</a></li>
+                <li class="nav-item"><a class="nav-link" href="#participate">Submit</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rules">Rules</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#acknowledgment">Acknowledgment</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="about-section text-center bg-gradient" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">AG-VPReID 2025: The 2nd Aerial-Ground Person ReID Challenge</h2>
+                <p class="text-white-50">
+                    AG-VPReID 2025 is the second installment of the Aerial-Ground Person Re-identification Challenge series, following the success of AG-ReID 2023. This competition addresses the critical challenge of matching individuals between aerial drone footage and ground-level cameras—a crucial capability for modern surveillance systems, security applications, and public safety operations.
+                    <!-- <br><br> -->
+                    While the previous challenge (AG-ReID 2023) focused on image-based matching at relatively low altitudes (up to 45m), AG-VPReID 2025 significantly expands the scope to video-based person re-identification at extreme altitudes (80m-120m). This represents a major advancement in the field and introduces unprecedented challenges such as extreme viewpoint differences, significant scale variations, and complex temporal dynamics.
+                    <!-- <br><br> -->
+                    The competition has been officially included as part of the <a href="https://ijcb2025.ieee-biometrics.org/" class="highlight-link">IJCB 2025</a> conference.
+                    <br><br>
+                    <span class="highlight-text">***</span>
+                    <br><br>
+                    This competition will have two parts:
+                    <br><br>
+                    <u>Part 1: "Algorithms-Self-Tested"</u> will require competitors to perform self-evaluation on a test dataset, which contains video-based data captured from high-altitude (80m-120m) drones and ground cameras. The dataset comprises 3,027 identities, 13,511 tracklets, and approximately 3.7 million frames, collected using two UAVs, two CCTV cameras, and two wearable cameras on a university campus. Additionally, 15 soft biometric traits for each identity are provided. For this part, overall mean Average Precision (mAP) is automatically calculated on the platform.
+                    <br><br>
+                    <u>Part 2: "Algorithms-Independently-Tested"</u> will focus on evaluating the solutions submitted by competitors. The evaluation process will be conducted by the organizers. Rank-1, Rank-5, Rank-10, and mAP metrics for each test case (Aerial-to-Ground and Ground-to-Aerial) will be computed by the hosts from uploaded solutions, and the result table will be updated accordingly.
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section text-center bg-gradient" id="dates">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">Important Dates</h2>
+                <div class="date-container">
+                    <p class="text-white-50">
+                        <strong class="date-highlight">March 3, 2025 (9am AEST)</strong>: Dataset and baseline code released.<br>
+                        <strong class="date-highlight">March 3 - June 2, 2025</strong>: Participants develop and submit their solutions.<br>
+                        <strong class="date-highlight">June 3, 2025 (9pm AEST)</strong>: Final submission deadline.<br>
+                        <strong class="date-highlight">June 6, 2025</strong>: Announcement of top-performing teams.<br>
+                        <strong class="date-highlight">June 10, 2025</strong>: Technical reports due from top-performing teams.<br>
+                        <strong class="date-highlight">June 23, 2025</strong>: Competition summary paper submission to IJCB 2025.<br>
+                        <strong class="date-highlight">September 2025</strong>: Presentation of results at IJCB 2025 conference.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-gradient" id="dataset">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">AG-VPReID Dataset</h2>
+                <div class="dataset-container">
+                    <h3 class="text-white mb-4 sub-heading">Training Dataset</h3>
+                    <table class="table table-bordered text-white-50 custom-table">
+                        <tr>
+                            <td>Identities</td>
+                            <td>Tracklets</td>
+                            <td>Frames</td>
+                        </tr>
+                        <tr>
+                            <td>689</td>
+                            <td>5,317</td>
+                            <td>~1.47M</td>
+                        </tr>
+                    </table>
+                
+                    <h3 class="text-white mb-4 sub-heading">Testing Dataset</h3>
+                    <h4 class="text-white">Testing Case 1: Aerial → Ground</h4>
+                    <table class="table table-bordered text-white-50 custom-table">
+                        <tr>
+                            <td>Set</td>
+                            <td>Identities</td>
+                            <td>Tracklets</td>
+                            <td>Frames</td>
+                        </tr>
+                        <tr>
+                            <td>Query</td>
+                            <td>645</td>
+                            <td>3,023</td>
+                            <td>424,532</td>
+                        </tr>
+                        <tr>
+                            <td>Gallery</td>
+                            <td>645</td>
+                            <td>2,750</td>
+                            <td>1,126,213</td>
+                        </tr>
+                    </table>
+                
+                    <h4 class="text-white">Testing Case 2: Ground → Aerial</h4>
+                    <table class="table table-bordered text-white-50 custom-table">
+                        <tr>
+                            <td>Set</td>
+                            <td>Identities</td>
+                            <td>Tracklets</td>
+                            <td>Frames</td>
+                        </tr>
+                        <tr>
+                            <td>Query</td>
+                            <td>645</td>
+                            <td>2,750</td>
+                            <td>1,126,213</td>
+                        </tr>
+                        <tr>
+                            <td>Gallery</td>
+                            <td>645</td>
+                            <td>3,023</td>
+                            <td>424,532</td>
+                        </tr>
+                        <tr>
+                            <td>Gallery Distractor</td>
+                            <td>1,693</td>
+                            <td>2,417</td>
+                            <td>687,988</td>
+                        </tr>
+                    </table>
+                
+                    <h3 class="text-white mb-4 sub-heading">Data Structure</h3>
+                    <p class="text-white-50">
+                        Each video tracklet follows the pattern: {ID}/{Tracklet}/{Frames}
+                        <br><br>
+                        <span class="highlight-text">***</span>
+                        <br><br>
+                        Note: To download the dataset, first you need to register and log in to our <a href="https://www.kaggle.com/t/86c97992385a65baafa7e6c9e881795f" class="highlight-link">Kaggle competition website</a>.
+                        <br>
+                        Please read our privacy and usage policy before downloading the dataset.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-gradient" id="participate">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">How To Participate</h2>
+                <div class="participate-container">
+                    <ol class="text-white-50 text-start">
+                        <li><strong>Set up an account on the competition platform</strong>: Register and join the AG-VPReID 2025 competition on <a href="https://www.kaggle.com/t/86c97992385a65baafa7e6c9e881795f" class="highlight-link">Kaggle</a>.</li>
+                        <li><strong>Review the competition rules and guidelines</strong>: Carefully review the competition's rules and guidelines to understand expectations and submission requirements.</li>
+                        <li><strong>Access the data</strong>: Download the competition dataset, including the training and testing sets, from the competition platform.</li>
+                        <li><strong>Develop your model</strong>: Design and train your person re-identification model using the provided training data. You may apply preprocessing and feature engineering techniques to improve performance.</li>
+                        <li><strong>Generate predictions</strong>: Use your trained model to generate predictions on the test data, formatting the results according to the specified submission guidelines.</li>
+                        <li><strong>Submit your results</strong>: Upload your prediction files to the competition platform for evaluation. Include a brief description of your approach and any additional details.</li>
+                        <li><strong>Monitor the leaderboard</strong>: After submission, you can view your ranking on the competition leaderboard and iteratively improve your model based on feedback until the submission limit is reached.</li>
+                    </ol>
+                    <span class="highlight-text">***</span>
+                    <p class="text-white-50">
+                        Baseline code will be made available through our <a href="https://github.com/agvpreid25/AG-VPReID" class="highlight-link">GitHub repository</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-gradient" id="rules">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">Rules</h2>
+                <div class="rules-container">
+                    <h3 class="text-white mb-4 sub-heading">General</h3>
+                    <ol class="text-white-50 text-start">
+                        <li>Your name in the leaderboard should be in the format "Surname Name (organization)."</li>
+                        <li>Participants must work on the problems individually.</li>
+                        <li>There is a limit of 10 submissions total for the entire competition.</li>
+                        <li>Each participant's best submission will be considered as their final result.</li>
+                        <li>Participants are encouraged to use the provided training data; however, they are allowed to use additional external data, provided that they disclose its usage upon submission. Algorithms trained on external data will be ranked separately.</li>
+                        <li>It is strictly prohibited for different accounts to use the same algorithm for submissions.</li>
+                        <li>Method description (one-page) must be submitted within a week after the competition ends if you want to be included in the summary paper submitted to IJCB 2025.</li>
+                    </ol>
+                    
+                    <h3 class="text-white mb-4 sub-heading">Competition-Specific Rules</h3>
+                    <ol class="text-white-50 text-start">
+                        <li>The competition focuses on aerial-ground video-based person re-identification using the AG-VPReID dataset.</li>
+                        <li>Submissions will be evaluated using mean Average Precision (mAP) and Cumulative Matching Characteristics (CMC) at Rank-1, Rank-5, and Rank-10.</li>
+                        <li>Participants should generate submission files according to the specified format, which includes predicted identity labels for each test video sequence.</li>
+                        <li>The person identity labels in the gallery set are hidden from participants, meaning participants will not know whether their algorithm has correctly identified the target person until they submit their results and receive evaluation feedback.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-gradient" id="organizers">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">Organizers</h2>
+                <div class="organizers-container">
+                    <div class="organization">
+                        <h4 class="text-white org-name">Queensland University of Technology, Australia</h4>
+                        <p class="text-white-50">
+                            <a href="https://www.qut.edu.au/about/our-people/academic-profiles/k.nguyenthanh" class="organizer-link">Dr. Kien Nguyen Thanh</a><br>
+                            <a href="https://www.qut.edu.au/about/our-people/academic-profiles/c.fookes" class="organizer-link">Prof. Clinton Fookes</a><br>
+                            <a href="https://www.qut.edu.au/about/our-people/academic-profiles/s.sridharan" class="organizer-link">Prof. Sridha Sridharan</a><br>
+                            <a href="https://www.linkedin.com/in/thanh-nhat-huy-nguyen-47b985252/" class="organizer-link">Thanh Nhat Huy Nguyen</a>
+                        </p>
+                    </div>
+                    
+                    <div class="organization">
+                        <h4 class="text-white org-name">Drexel University, USA</h4>
+                        <p class="text-white-50">
+                            <a href="https://drexel.edu/cci/about/directory/L/Liu-Feng/" class="organizer-link">Dr. Feng Liu</a>
+                        </p>
+                    </div>
+                    
+                    <div class="organization">
+                        <h4 class="text-white org-name">Michigan State University, USA</h4>
+                        <p class="text-white-50">
+                            <a href="https://www.cse.msu.edu/~liuxm/index2.html" class="organizer-link">Prof. Xiaoming Liu</a><br>
+                            <a href="https://engineering.msu.edu/faculty/Arun-Ross" class="organizer-link">Prof. Arun Ross</a>
+                        </p>
+                    </div>
+                    
+                    <div class="organization">
+                        <h4 class="text-white org-name">Department of Defence, Australia</h4>
+                        <p class="text-white-50">
+                            <a href="https://researchers.adelaide.edu.au/profile/dana.michalski" class="organizer-link">Dr. Dana Michalski</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section bg-black" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100 contact-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Contact us if you have questions!</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"><a href="mailto:agvpreid25@gmail.com" class="contact-email">agvpreid25@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section text-center bg-gradient" id="acknowledgment">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4 section-heading">Acknowledgment</h2>
+                <p class="text-white-50">
+                    We acknowledge the contributors to the AG-ReID 2023 challenge whose feedback shaped this second edition. This webpage uses the LiveDet-Iris 2023 template, courtesy of Adam Czajka and team. We thank QUT's Research Engineering Facility (REF) for their expertise and infrastructure, and all volunteers who participated in data collection.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; AG-VPReID 2025</div></footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
